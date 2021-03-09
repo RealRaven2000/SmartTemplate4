@@ -1,0 +1,524 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Smart Templates - Bugs</title>
+   <!-- LOCAL HEAD.TXT -->
+
+   <!-- META-KEYWORDS BEGIN -->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width; user-scalable=0; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0;">
+   <!--<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1; minimum-scale=1">-->
+   <meta name="keywords" content="SmartTemplates, mailheader, customize, e-Mail, modification, quote, html, plain, stationery">
+   <meta name="google-site-verification" content="LTKICtodcLDl0nhBl2mUiXWMJbOtmEJmhYXVAqm_mJM" />
+   <meta name="description" content="SmartTemplates offers an easy way to customize Thunderbirds, SeaMonkeys and Postboxs default quote header by using templates. Templates can be created for every account as well as for global settings (for all email accounts).">
+   <meta name="author" content="Axel Grude, Marky Mark DE">
+   <!-- META-KEYWORDS END -->
+
+   <!-- BASICS BEGIN -->
+   <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+   <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+   <link rel="apple-touch-icon-precomposed" href="http://smarttemplate4.mozdev.org/img/apple-touch-icon-precomposed-57x57.png">
+   <link rel="apple-touch-icon-precomposed" href="http://smarttemplate4.mozdev.org/img/apple-touch-icon-precomposed-72x72.png">
+   <link rel="apple-touch-icon-precomposed" href="http://smarttemplate4.mozdev.org/img/apple-touch-icon-precomposed-114x114.png">
+   <link rel="apple-touch-icon-precomposed" href="http://smarttemplate4.mozdev.org/img/apple-touch-icon-precomposed-144x144.png">
+   <!-- BASICS END -->
+
+   <!-- GLOBAL STYLESHEETS BEGIN -->
+   <link rel="stylesheet" type="text/css" media="print" href="/css/print.css">
+   <link rel="stylesheet" type="text/css" media="scree, all" href="/css/b-i-f.css">
+   <link rel="stylesheet" type="text/css" media="screen" href="/css/media.css">
+   <link rel="stylesheet" type="text/css" media="screen, all" href="/css/webFonts.css">
+   <link rel="stylesheet" type="text/css" media="screen, all" href="/css/project.css">
+   <link rel="stylesheet" type="text/css" media="screen, all" href="/css/project_nav.css?v=1">   
+   <link rel="stylesheet" type="text/css" media="screen, all" href="/css/jqueryPlugins.css">
+   <!--[if lte IE 7]>
+   <link rel="stylesheet" type="text/css" media="screen, all" href="/css/ie7.css">
+   <![endif]-->
+   <!-- GLOBAL STYLESHEETS END -->
+
+   <!-- JQUERY JS FRAMEWORK BEGIN -->
+   <!--[if lt IE 9]>
+   <script src="/js/modernizr.custom.js" charset="UTF-8"></script>
+   <![endif]-->
+   <script src="/js/jquery-1.11.1.min.js" charset="UTF-8"></script>
+   <script src="/js/jqueryPlugins.js" charset="UTF-8"></script>
+   <!-- JQUERY JS FRAMEWORK END -->
+
+   <!-- ADDITIONAL JS BEGIN -->
+   <script src="/js/environment.js" charset="UTF-8"></script>
+   <script src="/js/scripts.js" charset="UTF-8"></script>
+   <script src="/js/navibar.js" charset="UTF-8"></script>
+   <script src="/js/ga.js" charset="UTF-8"></script>
+   <script src="/js/premium.js" charset="UTF-8"></script>
+   <!-- ADDITIONAL JS END -->
+
+ </head>
+<!-- END LOCAL HEAD.TXT -->
+
+<!-- HTML_BODY.HTML -->
+<body>
+
+<noscript>
+	<div class="msgBox error" id="msgBox_error">
+		<h1>Our website requires JavaScript.</h1>
+		The instruction how to enable JavaScript in your browser, you can find <a href="http://www.enable-javascript.com/" rel="nofollow" title="How to enable Javascript in your browser" target="_blank">here</a>.
+	</div>
+</noscript>
+
+<!-- ####################### BEGIN MAIN CONTENT ########################## -->
+<div id="main-content-no-nav">
+<!-- PROJECT_NAV.HTML -->
+<h1 class="project-name" id="content"><img src="/img/logo-pro.png" alt="SmartTemplates"></h1>
+
+ <table id="project-navigation"> 
+  <tbody id="resources" class="project-navigations">
+   <tr>
+    <td class="navigation-list">
+     <!-- a class for media query -->
+     <a class="index" href="/index.html">Home</a>
+     <a class="variables" href="/variables.html">Variable Definitions</a>
+     <a class="templates" href="/templates.html?jquery=on">Example Templates</a>
+     <a class="screenshots" href="/screenshots.html">Screenshots</a>
+     <a class="version" href="/version.html">Version History</a>
+     <a class="bugs" href="/kb-main.html">Knowlegebase</a>
+     <a class="faq" href="/faq.html">FAQ</a>
+     <a class="bugs" href="/bugs.html">Bugs &amp; Features</a>
+     <a class="premium" href="/premium.html">Premium Features</a>
+     <a class="contribute" href="/contribute.html">Licenses</a>
+    </td>
+		<tr id="navKB">
+		 <td class="kb-nav-list navigation-list">
+			 <a class="kb-nav" href="/kb-basics.html">HTML Basics</a>
+			 <a class="kb-nav" href="/kb-fonts.html">Fonts</a>
+			 <a class="kb-nav" href="/kb-tags.html">General Tips</a>
+			 <a class="kb-nav" href="/kb-inspector.html">Troubleshooting Styles</a>
+			 <a class="kb-nav" href="/support.html">Add-on Troubleshooting</a>
+		 </td>
+		</tr>
+   </tr>
+ </tbody>
+</table>
+<!-- END PROJECT_NAV.HTML -->
+
+<!-- BUGS.HTML -->
+<script type="text/javascript">
+"use strict"; // use ECMAScript5 strict mode
+  markActiveNavigation("bugs.html");
+  /* Apply this site specific files to <head> element */
+  loadStyleSheet("bugs.css");
+  loadStyleSheet("infoBox.css");
+</script>
+
+<h2 class="page-header">SmartTemplates :: Bugs</h2>
+
+<div id="infoTabs">
+  <div class="infoTab" id="breaking-news">
+    <h5 class="infoHeader">Bugzilla - why, and how?</h5>
+    <p class="miniquote">Bugzilla is free and open to anyone who registers with it.
+      The big advantage here is that many users can share bug information, or view feature requests
+      or planned new features and track these, in true open source fashion. From time to time we will also
+      publish patched prerelease versions by attaching them to their relevant bugs.
+		</p>
+		<p class="miniquote">With more complex bugs, to help us helping you better, you should also 
+			 refer to the <a href="support.html">troubleshooting section</a>. It describes how
+			 to create an error log.</p>
+		<p class="miniquote">
+      When submitting new bug reports, please search first whether the bug
+      is already submitted to avoid yours being marked as duplicate.<br>
+      For feature requests, submit a bug and select "enhancement" in the severity dropdown:
+    </p>
+	  <p>
+		   For creating an error log, please check out the <a href="support.html">troubleshooting section</a>.
+    </p>
+    <p style="text-align:center;"><!-- aligns the nested image -->
+      <img class="screenshot" src="screenshots/bugzilla-feature.png" alt="feature request">
+    </p>
+  </div>
+</div>
+
+<p class="attention">
+ <em>ATTENTION:</em><br>
+  <span class="important">1.</span> When submitting new bugs, please search first whether the bug is already submitted to avoid yours being marked as duplicate.<br>
+  <span class="important">2.</span> For easier processing, please make sure that the title describes the bug precisely.<br>
+  Titles such as "bug report" or "compatibility problem" are not helpful.
+</p>
+
+<p class="tip" style="margin-top: -20px;">
+ <em>TIP:</em> Some examples for good bug titles are: "quoted body missing when replying", "feature request: add reply to sender for newsgroups".
+</p>
+
+<a id="github"> &nbsp;</a>
+<h3>New Issue Tracker at Github</h3>
+<p>
+	To bring issues into the 21st century (and a secure website) - you can now use our 
+  <a href="https://github.com/RealRaven2000/SmartTemplate4/issues">github tracker</a>.
+</p>
+<h4>Latest Issues on github</h4>
+
+<style>
+  .BZ-table td:first-child {
+		white-space: nowrap;
+	}
+</style>
+<table class="BZ-table">
+	<thead>
+		<tr>
+		<th class="BZ-th-bug">Issue #</th><th class="BZ-th-desc">Description</th>
+		</tr>
+	</thead>
+	<tbody>
+
+<!--  example for a fixed issue  
+  <tr>
+	  <td>
+			<span class="BZ-resolved-fixed BZ-strike" title="RESOLVED-FIXED">
+			<a id="issue_*_link" target="_blank" href="https://github.com/RealRaven2000/SmartTemplate4/issues/*">issue *</a>
+			</span>
+		</td>
+		<td>
+			Description
+		</td>
+	</tr>  
+-->  
+
+<!--  example for an unresolved issue  
+  <tr>
+	  <td>
+			<a id="issue_*_link" target="_blank" href="https://github.com/RealRaven2000/SmartTemplate4/issues/*">issue *</a>
+		</td>
+		<td>
+			Description
+		</td>
+	</tr>
+-->  
+
+  <tr>
+	  <td>
+			<a id="issue_42_link" target="_blank" href="https://github.com/RealRaven2000/SmartTemplate4/issues/42">issue 42</a>
+		</td>
+		<td>
+			%from(lastname)% uses first name of AB if sender address has only 1 name part.
+		</td>
+	</tr>
+  <tr>
+	  <td>
+			<a id="issue_41_link" target="_blank" href="https://github.com/RealRaven2000/SmartTemplate4/issues/41">issue 41</a>
+		</td>
+		<td>
+			No file template menus displayed in single message window
+		</td>
+	</tr>
+  <tr>
+	  <td>
+			<a id="issue_34_link" target="_blank" href="https://github.com/RealRaven2000/SmartTemplate4/issues/34">issue 34</a>
+		</td>
+		<td>
+			File Templates: update button should also update path
+		</td>
+	</tr>
+  <tr>
+	  <td>
+			<a id="issue_28_link" target="_blank" href="https://github.com/RealRaven2000/SmartTemplate4/issues/28">issue 28</a>
+		</td>
+		<td>
+			Add "Smart Snippets": smart fragments that can be inserted from Composer.
+		</td>
+	</tr>
+  <tr>
+	  <td>
+			<a id="issue_27_link" target="_blank" href="https://github.com/RealRaven2000/SmartTemplate4/issues/27">issue 27</a>
+		</td>
+		<td>
+			Feature request: Insert external HTML Templates from a web page URL
+		</td>
+	</tr>
+  <tr>
+	  <td>
+			<a id="issue_24_link" target="_blank" href="https://github.com/RealRaven2000/SmartTemplate4/issues/24">issue 24</a>
+		</td>
+		<td>
+			Select a different html template file while composer is open
+		</td>
+	</tr>  
+  
+  <tr>
+	  <td>
+			<a id="issue_10_link" target="_blank" href="https://github.com/RealRaven2000/SmartTemplate4/issues/10">issue 10</a>
+		</td>
+		<td>
+			Feature request : variable to ask for acknowledgment on receipt
+		</td>
+	</tr>  
+
+  <tr>
+	  <td>
+			<span class="BZ-resolved-fixed BZ-strike" title="RESOLVED-FIXED">
+			<a id="issue_38_link" target="_blank" href="https://github.com/RealRaven2000/SmartTemplate4/issues/38">issue 38</a>
+			</span>
+		</td>
+		<td>
+			Images with encoded file URLs are not loaded correctly
+		</td>
+	</tr>  
+  <tr>
+	  <td>
+			<span class="BZ-resolved-fixed BZ-strike" title="RESOLVED-FIXED">
+			<a id="issue_36_link" target="_blank" href="https://github.com/RealRaven2000/SmartTemplate4/issues/36">issue 36</a>
+			</span>
+		</td>
+		<td>
+			Smart-reply button: html template menus missing or not working
+		</td>
+	</tr>  
+  <tr>
+	  <td>
+			<span class="BZ-resolved-fixed BZ-strike" title="RESOLVED-FIXED">
+			<a id="issue_35_link" target="_blank" href="https://github.com/RealRaven2000/SmartTemplate4/issues/35">issue 35</a>
+			</span>
+		</td>
+		<td>
+			%identity% - add feature to load additional information from addressbook
+		</td>
+	</tr>  
+  <tr>
+	  <td>
+			<span class="BZ-resolved-fixed BZ-strike" title="RESOLVED-FIXED">
+			<a id="issue_33_link" target="_blank" href="https://github.com/RealRaven2000/SmartTemplate4/issues/33">issue 33</a>
+			</span>
+		</td>
+		<td>
+			mailto links - support using template if body argument is not empty
+		</td>
+	</tr>  
+  <tr>
+	  <td>
+			<span class="BZ-resolved-fixed BZ-strike" title="RESOLVED-FIXED">
+			<a id="issue_31_link" target="_blank" href="https://github.com/RealRaven2000/SmartTemplate4/issues/31">issue 31</a>
+			</span>
+		</td>
+		<td>
+			Add functions to remove text / tags from quoted parts
+		</td>
+	</tr>
+  <tr>
+	  <td>
+			<span class="BZ-resolved-fixed BZ-strike" title="RESOLVED-FIXED">
+			<a id="issue_30_link" target="_blank" href="https://github.com/RealRaven2000/SmartTemplate4/issues/30">issue 30</a>
+			</span>
+		</td>
+		<td>
+			Reply button loses template menu items
+		</td>
+	</tr>
+  <tr>
+	  <td>
+			<span class="BZ-resolved-fixed BZ-strike" title="RESOLVED-FIXED">
+			<a id="issue_29_link" target="_blank" href="https://github.com/RealRaven2000/SmartTemplate4/issues/29">issue 29</a>
+			</span>
+		</td>
+		<td>
+			Add configuration item to file template menus.
+		</td>
+	</tr>
+  <tr>
+	  <td>
+			<span class="BZ-resolved-fixed BZ-strike" title="RESOLVED-FIXED">
+			<a id="issue_25_link" target="_blank" href="https://github.com/RealRaven2000/SmartTemplate4/issues/25">issue 25</a>
+			</span>
+		</td>
+		<td>
+			Feature request: set variables from addressbook fields
+		</td>
+	</tr>
+  <tr>
+	  <td>
+			<span class="BZ-resolved-fixed BZ-strike" title="RESOLVED-FIXED">
+			<a id="issue_20_link" target="_blank" href="https://github.com/RealRaven2000/SmartTemplate4/issues/20">issue 20</a>
+			</span>
+		</td>
+		<td>
+			If a file starts with UTF detection character "missing file" is wrongly displayed
+		</td>
+	</tr>
+  <tr>
+	  <td>
+			<span class="BZ-resolved-fixed BZ-strike" title="RESOLVED-FIXED">
+			<a id="issue_21_link" target="_blank" href="https://github.com/RealRaven2000/SmartTemplate4/issues/21">issue 21</a>
+			</span>
+		</td>
+		<td>
+			%spellcheck% sometimes doesn't remove red proofing lines after language set
+		</td>
+	</tr>
+	<tr>
+	  <td>
+			<a id="issue_17_link" target="_blank" class="link-gray-dark v-align-middle no-underline h4 js-navigation-open" href="https://github.com/RealRaven2000/SmartTemplate4/issues/17">issue 17</a>
+		</td>
+		<td>
+			Add %spellcheck()% variable for changing spellchecker to a different language
+		</td>
+	</tr>
+	<tr>
+	  <td>
+			<a id="issue_16_link" target="_blank" class="link-gray-dark v-align-middle no-underline h4 js-navigation-open"  href="https://github.com/RealRaven2000/SmartTemplate4/issues/16">issue 16</a>
+		</td>
+		<td>
+			In some cases, images in signature trigger the "blocked file" warning
+		</td>
+	</tr>
+	<tr>
+	  <td>
+			<a id="issue_8_link" target="_blank" class="link-gray-dark v-align-middle no-underline h4 js-navigation-open" href="https://github.com/RealRaven2000/SmartTemplate4/issues/8">issue 8</a>
+		</td>
+		<td>
+			Support File Templates - to replace Stationery from Thunderbird 68 forward
+		</td>
+	</tr>
+  <tr>
+	  <td>
+			<span class="BZ-resolved-fixed BZ-strike" title="RESOLVED-FIXED">
+			<a id="issue_4_link" target="_blank" class="link-gray-dark v-align-middle no-underline h4 js-navigation-open" data-hovercard-type="issue" data-hovercard-url="/RealRaven2000/SmartTemplate4/issues/4/hovercard" href="https://github.com/RealRaven2000/SmartTemplate4/issues/4">issue 4</a>
+			</span>
+		</td>
+		<td>
+			SmartTemplate 2.1 problems with determining current language of Thunderbird
+		</td>
+	</tr>
+  <tr>
+	  <td>
+			<span class="BZ-resolved-fixed BZ-strike" title="RESOLVED-FIXED">
+			<a id="issue_3_link" target="_blank" class="link-gray-dark v-align-middle no-underline h4 js-navigation-open" data-hovercard-type="issue" data-hovercard-url="/RealRaven2000/SmartTemplate4/issues/3/hovercard" href="https://github.com/RealRaven2000/SmartTemplate4/issues/3">issue 3</a>
+			</span>
+		</td>
+		<td>
+			%dateformat% doesn't show leading zeros.
+		</td>
+	</tr>
+  <tr>
+	  <td>
+			<a id="issue_2_link" target="_blank" class="link-gray-dark v-align-middle no-underline h4 js-navigation-open" data-hovercard-type="issue" data-hovercard-url="/RealRaven2000/SmartTemplate4/issues/2/hovercard" href="https://github.com/RealRaven2000/SmartTemplate4/issues/2">issue 2</a>
+		</td>
+		<td>
+			Headers duplicated with Virtual Identity
+		</td>
+	</tr>
+  <tr>
+	  <td>
+			<a id="issue_9_link" target="_blank" class="BZ-resolved-fixed BZ-strike" data-hovercard-type="issue" data-hovercard-url="/RealRaven2000/SmartTemplate4/issues/2/hovercard" href="https://github.com/RealRaven2000/SmartTemplate4/issues/9">issue 9</a>
+		</td>
+		<td>
+			%header.set(from)% not working in Tb60.9
+		</td>
+	</tr>
+	</tbody>
+</table>
+
+
+<a id="mozdev"> &nbsp;</a>
+<h3>Bugzilla Database at mozdev.org - deprecated!</h3>
+
+<p>This database has been shut down and readonly copies have 
+  been downloaded and can be referenced from the version history page.</p>
+
+
+<!-- Mozdev's Bugtable is out of our focus (automatic generated content), we can't make them valide -->
+<!-- END BUGS.HTML -->
+
+
+<!-- FOOTER.HTML -->
+<script>
+"use strict"; // use ECMAScript5 strict mode
+
+  /* Apply this site specific files to <head> element */
+  loadStyleSheet("footer.css");
+  loadStyleSheet("navibar.css");
+</script>
+
+  <div id="footer">
+   <div class="horizontalRule"></div>
+    <a id="contact"></a><!-- this anchor is just an in-page jump point, DO NOT REMOVE WE USE THIS ANCHOR ON ATN -->
+      <div id="mailToLink">
+       You have questions / comments about SmartTemplates? Please feel free to 
+       <p class="mail_link">
+        <script>mailtoLine();</script><!-- Mailto Line filled by JavaScript -->
+       </p>
+      </div>
+
+       <div class="attribution"><b>Attributions:</b><br>
+         Flagset by  Matthias Slovig under CC, see:
+        <a href="http://flags.blogpotato.de/" title="Visit Flagpotato Website" target="_blank">http://flags.blogpotato.de/</a><br>
+         Fugue Icons (or based on) by Yusuke Kamiyamane under CC, see:
+        <a href="http://p.yusukekamiyamane.com/" title="Visit Yusuke Kamiyamane Website" target="_blank">http://p.yusukekamiyamane.com/</a><br>
+         Noia Icons (or based on) by Carles Carbonell Bernado under LGPL, see:
+       <a href="http://carlitus.deviantart.com/" title="Visit Noia on Deviantart" target="_blank">http://carlitus.deviantart.com/</a>
+       </div>
+
+       <!--Special Attributions -->
+       <!-- Brands Carousel (jquery) in Alphabetically Order -->
+        <div id="brandsCarousel">
+         <a href="http://www.7-zip.org" target="_blank" title="Visit 7-Zip Website"><img class="brands" src="/brands/50/7zip.png" height="50" width="50" alt="7-Zip"></a>
+         <a href="https://addons.mozilla.org" target="_blank" title="Visit addons.mozilla.org"><img class="brands" src="/brands/50/amo.png" height="50" width="50" alt="ATN"></a>
+         <a href="http://www.android.com" target="_blank" title="Visit Android Website"><img class="brands" src="/brands/50/android.png" height="50" width="50" alt="Android"></a>
+         <a href="http://beta.babelzilla.org" target="_blank" title="Visit BabelZilla.org"><img class="brands" src="/brands/50/babelzilla.png" height="50" width="50" alt="BabelZilla"></a>
+         <a href="http://bluefish.openoffice.nl/index.html" target="_blank" title="Visit Bluefish Website"><img class="brands" src="/brands/50/bluefish.png" height="50" width="50" alt="Bluefish"></a>
+         <a href="http://www.caminobrowser.org" target="_blank" title="Visit Camino Browser (Mac OS only) Website"><img class="brands" src="/brands/50/camino.png" height="50" width="50" alt="Camino"></a>
+         <a href="http://www.creativecommons.org" target="_blank" title="Visit Creative Commons Website"><img class="brands" src="/brands/50/creativecommons.png" height="50" width="50" alt="CreativeCommons"></a>
+         <a href="https://duckduckgo.com" target="_blank" title="DuckDuckGo is a search engine that does not track you"><img class="brands" src="/brands/50/duckduckgo.png" height="50" width="50" alt="DuckDuckGo"></a>
+         <a href="http://www.mozilla.org/firefox/fx/" target="_blank" title="Visit Firefox Website"><img class="brands" src="/brands/50/firefox.png" height="50" width="50" alt="Firefox"></a>
+         <a href="http://www.gimp.org" target="_blank" title="Visit Gimp Website"><img class="brands" src="/brands/50/gimp.png" height="50" width="50" alt="Gimp"></a>
+         <a href="http://www.gnu.org" target="_blank" title="Visit GNU Website"><img class="brands" src="/brands/50/gnu.png" height="50" width="50" alt="GNU"></a>
+         <a href="http://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank" title="Read GPL 3.0 License"><img class="brands" src="/brands/50/gpl3.0.png" height="50" width="50" alt="GPL 3.0"></a>
+         <a href="http://validator.w3.org/check?uri=referer" target="_blank" title="Check this Website"><img class="brands" src="/brands/50/html5.png" height="50" width="50" alt="HTML5"></a>
+         <a href="http://www.jquery.com" target="_blank" title="Visit jQuery.com"><img class="brands" src="/brands/50/jquery.png" height="50" width="50" alt="jQuery"></a>
+         <a href="http://www.kompozer.net" target="_blank" title="Visit KompoZer Website"><img class="brands" src="/brands/50/kompozer.png" height="50" width="50" alt="KompoZer"></a>
+         <a href="http://www.gnu.org/licenses/lgpl-3.0.en.html" target="_blank" title="Read LGPL 3.0 License"><img class="brands" src="/brands/50/lgpl3.0.png" height="50" width="50" alt="LGPL 3.0"></a>
+         <a href="http://www.libreoffice.org/" target="_blank" title="Visit LibreOffice Website"><img class="brands" src="/brands/50/libreoffice.png" height="50" width="50" alt="LibreOffice"></a>
+         <a href="http://www.linux.org" target="_blank" title="Visit Linux Website"><img class="brands" src="/brands/50/linux.png" height="50" width="50" alt="Linux"></a>
+         <a href="https://developer.mozilla.org" target="_blank" title="Visit developer.mozilla.org Website"><img class="brands" src="/brands/50/mdn.png" height="50" width="50" alt="MDN"></a>
+         <a href="http://www.modernizr.com" target="_blank" title="Visit modernizr.com"><img class="brands" src="/brands/50/modernizr.png" height="50" width="50" alt="Modernizr"></a>
+         <a href="http://mozbackup.jasnapaka.com" target="_blank" title="Visit MozBackup Website"><img class="brands" src="/brands/50/mozbackup.png" height="50" width="50" alt="MozBackup"></a>
+         <a href="http://www.mozdev.org" target="_blank" title="Visit Mozdev.org"><img class="brands" src="/brands/50/mozdev.png" height="50" width="50" alt="Mozdev"></a> 
+         <a href="http://www.mozilla.org/foundation/about.html" target="_blank" title="Visit Mozilla Foundation Website"><img class="brands" src="/brands/50/mozilla.png" height="50" width="50" alt="Mozilla"></a>
+         <a href="http://www.notepad-plus-plus.org" target="_blank" title="Visit Notepad++ Website"><img class="brands" src="/brands/50/notepad++.png" height="50" width="50" alt="Notepad++"></a>
+         <a href="http://www.opensource.org" target="_blank" title="Visit Open Source Initiative Website"><img class="brands" src="/brands/50/opensource.png" height="50" width="50" alt="OpenSource"></a>
+         <a href="http://www.postbox-inc.com/" target="_blank" title="Visit PostBox Website"><img class="brands" src="/brands/50/postbox.png" height="50" width="50" alt="Postbox"></a>
+         <a href="http://www.seamonkey-project.org/" target="_blank" title="Visit Seamonkey Project Website"><img class="brands" src="/brands/50/seamonkey.png" height="50" width="50" alt="Seamonkey"></a>
+         <a href="http://www.mozilla.org/thunderbird" target="_blank" title="Visit Thunderbird Website"><img class="brands" src="/brands/50/thunderbird.png" height="50" width="50" alt="Thunderbird"></a>
+         <a href="http://www.tortoisecvs.org" target="_blank" title="Visit Tortoise CVS Website"><img class="brands" src="/brands/50/tortoise_cvs.png" height="50" width="50" alt="Tortoise CVS"></a>
+         <a href="http://www.tortoisesvn.net" target="_blank" title="Visit Tortoise SVN Website"><img class="brands" src="/brands/50/tortoise_svn.png" height="50" width="50" alt="Tortoise SVN"></a>
+         <a href="http://www.w3.org" target="_blank" title="Visit World Wide Web Consortium Website"><img class="brands" src="/brands/50/w3c.png" height="50" width="50" alt="W3C"></a>
+         <a href="http://www.w3schools.com" target="_blank" title="Visit W3Schools Website"><img class="brands" src="/brands/50/w3schools.png" height="50" width="50" alt="W3 Schools"></a>
+        </div>
+        <!-- END Brands Carousel -->
+
+        <div class="copyright" id="copyright">
+          <script>copyrightLine();</script><!-- Copyright Line filled by JavaScript -->
+        </div>
+
+      </div><!-- CLOSE <div id="footer"> -->
+    </div><!-- CLOSE <div id="main-content-no-nav"> with the blue box -->
+
+    <!-- Overlay Navibar -->
+    <div class="outerTable" id="navbarTable">
+     <table class="innerTable">
+      <tbody>
+       <tr class="innerTableTR">
+        <td class="innerTableTD"><div class="homeButton"><a href="/index.html" target="_self" title="To our Startpage">Home</a></div></td>
+        <td class="innerTableTD"><div class="historyBackButton"><a href="javascript:goBack();" title="Previous Page">Previous</a></div></td>
+        <td class="innerTableTD"><div class="scrollButton"><a href="javascript:window.scrollTo(0,0);" title="Scroll to Top">Up</a></div></td>
+        <td class="innerTableTD"><div class="historyFwdButton"><a href="javascript:goForward();" title="Next Page">Next</a></div></td>
+        <td class="innerTableTD"><div class="printButton"><a href="javascript:window.print();" title="Print this Page">Print</a></div></td>
+        <td class="innerTableTD"><div class="fontPlusButton"><a href="" onclick="resizeText(1);return false;" title="increase font size">Font +</a></div></td>
+        <td class="innerTableTD"><div class="fontMinusButton"><a href="" onclick="resizeText(-1);return false;" title="reduce font size">Font -</a></div></td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+    <!-- END Overlay Navibar -->
+
+    <div id="downPusher"></div><!-- push down the black main background -->
+    <!-- END FOOTER.HTML -->
+  </body>  
+</html>
+<!-- END HTML SITES IN FOOTER.HTML -->
+
